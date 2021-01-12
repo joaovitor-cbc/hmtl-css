@@ -3,32 +3,38 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Spring</title>
+	<!--O Elemento HTML <link> especifica as relações entre o documento atual e um recurso externo. Possíveis usos para este elemento incluem a definição de uma estrutura relacional para navegação.
+	 Este elemento é mais usado para vincular as folhas de estilo. 
+	O atributo rel vem de relationship serve para você dizer qual o relacionamento do arquivo que você quer utilizar com o arquivo atual. Quando você coloca rel="stylesheet" , você está dizendo que o arquivo importado é o arquivo responsável pelo estilo da sua página.
+	HREF serve para apontar para algo externo(fora da página) que o usuário requisitar, ou que a página que o contêm necessitar usa-lo(no caso das folhas de estilo)-->
+	<link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
 	<!-- inicio do artigo -->
 	<header>
-		<p>Blog de tecnologia</p>
+		<p class="inicio">Blog de tecnologia</p>
 	</header>
-
-	<article>
-
-		<h1>O que é Spring Boot?</h1>
+	<!--classe css para indentificação-->
+	<article class="destaque">
+		<!--id para indentificação css-->
+		<h1 id="titulo">O que é Spring Boot?</h1>
 		<figure>
 			<img src="image/spring-boot.png" alt="imagem-spring-boot">
 		</figure>
-		<p>Muitas pessoas morrem de medo de terem que configurar uma aplicação do zero. Geralmente, são necessárias várias configurações para só então começar a codificar.</p>
+		<p>Muitas pessoas morrem de medo de terem que configurar uma aplicação do zero.
+			 Geralmente, são necessárias várias configurações para só então começar a codificar.</p>
 
 		<p>Agora, <mark>imagine pular toda essa parte chata de configurações</mark> e criar um projeto onde você já tenha tudo o que precisa para começar uma aplicação. Muito bom, não é mesmo?</p>
 
-		<p><strong>Se você gostou dessa ideia</strong>, continue comigo que eu vou te mostrar como criar esse tipo de aplicação utilizando o Spring Boot.</p>
+		<p class="continue"><strong>Se você gostou dessa ideia</strong>, continue comigo que eu vou te mostrar como criar esse tipo de aplicação utilizando o Spring Boot.</p>
 	</article>
 
-	<article>
+	<article class="passo-a-passo">
 		<header>
 			<h2>Olha só o que você irá aprender nesse artigo:</h2>
 		</header>
 		<h3>O que é <a href="https://spring.io/projects/spring-boot" target="_blank">Spring Boot</a></h3>
-		<p>Instalando o STS (Spring Tool Suite)
+		<p class="instrucoes">Instalando o STS (Spring Tool Suite)
 		<br>Desenvolver uma pequena aplicação web para listagem de contatos
 		<br>Que benefícios tem o DevTools
 		<br>Como publicar sua aplicação no Heroku
