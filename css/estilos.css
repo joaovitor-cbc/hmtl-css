@@ -63,7 +63,19 @@ chamado classe .continue que tenha um filho direto > em
 article > .instrucoes > em{
     color: black;
 }
-/*A propriedade padding define uma a distância entre o conteúdo de um elemento e suas bordas. É um atalho que evita definir uma distância para cada lado separadamente ( padding-top , padding-right , padding-bottom , padding-left )*/
+/*(padding)-> A propriedade padding define uma a distância entre o conteúdo de um elemento e suas bordas. É um atalho que evita definir uma distância para cada lado separadamente ( padding-top , padding-right , padding-bottom , padding-left )*/
 body{
     padding: 0px;
+}
+/*(list-style-position)-> Este é o efeito da folha de estilo acima: Este item destina-se a demonstrar o valor: "inside" dos marcadores. Aqui mais item para demonstrar o valor:"inside" dos marcadores de listas.*/
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0px;
+}
+/*(display)-> A propriedade CSS display especifica o tipo de caixa de renderização usada por um elemento. No HTML, os valores padrões da propriedade display são feitas a partir do comportamento descrito nas especificações HTML ou da folha de estilo padrão do navegador/usuário. */
+.menu li{
+    display: inline-block;
+    border: 3px solid #ff0000;
+    padding: 5px;
 }
