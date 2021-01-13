@@ -1,3 +1,10 @@
+/* seletor * que referecia todos os elementos 
+    A propriedade CSS box-sizing é utilizada para alterar a propriedade padrão da box model, usada para calcular larguras (widths) e alturas (heights) dos elementos.
+    (border-box)->box-sizing: border-box; que indica que o tamanho agora levará em conta até a borda -- ou seja, o width será a soma do conteúdo com a borda e o padding. Se quiser um extra
+    (Content-box)->Essa é o estilo padrão, conforme especificado pela norma CSS. As propriedades width (largura) e height (altura) são medidas incluindo só o conteúdo, mas não o padding, border ou margin. Nota: Padding, border e margin serão fora da box. Exemplo.: Se .box {width: 350px} então se você aplicar uma propriedade {border: 10px solid black;} o resultado renderizado no navegador (browser) será .box {width: 370px;}*/
+* {
+    box-sizing: border-box; 
+}
 /* agrupamento de seletores, tanto por id#
 quanto por classe.
 A propriedade font-family do CSS permite que se faça uma lista de prioridades de familias de fontes e/ou nomes genéricos de famílias a serem especificados para um elemento selecionado. Ao contrário da maioria das demais propriedades CSS, os valores são separados por vírgula para indicar quais são as alternativas.
@@ -27,6 +34,12 @@ font-weight: bold; */
     font: italic bold 24px;
     text-decoration: underline;
     text-align: center;
+/*A propriedade border é uma propriedade para ajustar os valores de propriedades individuais da borda em um único elemento na folha do estilo. border pode ser usado com as seguintes propriedades adicionais: border-width , border-style , border-color*/    
+    border-width: thick;
+    border-color: #ff0000;
+    border-style: dashed;
+/*A propriedade padding define uma a distância entre o conteúdo de um elemento e suas bordas. É um atalho que evita definir uma distância para cada lado separadamente ( padding-top , padding-right , padding-bottom , padding-left )*/
+    padding: 20px 15px;        
 }
 /* passando a cor por hexadecimal 
 aonde dois primeiros numeros representa vermelho
@@ -49,4 +62,8 @@ chamado classe .continue que tenha um filho direto > em
 */    
 article > .instrucoes > em{
     color: black;
+}
+/*A propriedade padding define uma a distância entre o conteúdo de um elemento e suas bordas. É um atalho que evita definir uma distância para cada lado separadamente ( padding-top , padding-right , padding-bottom , padding-left )*/
+body{
+    padding: 0px;
 }
