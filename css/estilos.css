@@ -79,3 +79,11 @@ body{
     border: 3px solid #ff0000;
     padding: 5px;
 }
+/*seletor de pseudo elemento
+Em CSS, ::after cria um pseudo-elemento que é o último filho do elemento selecionado. Muitas vezes é usado para adicionar e melhorar o conteúdo de um elemento como a propriedade content . É inline por padrão.
+#planos::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+*/
